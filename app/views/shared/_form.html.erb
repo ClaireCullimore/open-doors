@@ -1,13 +1,14 @@
 <div class="container">
   <div class="main-section">
-    <div class="box-form">
+    <div class="job-form">
       <%= simple_form_for(job) do |f| %>
         <%= f.input :title %>
         <%= f.input :company %>
-        <%= f.input :terms %>
+        <%= f.input :terms, :collection => %w[FullTime PartTime Freelance]  %>
         <%= f.input :location %>
-        <%= f.input :description %>
-        <%= f.input :link %>
+        <%= f.input :description, label: 'Job Description', rows: 15 %>
+        <%= f.input :link, label: 'Link to Apply' %>
+        <%= f.input :email, label: 'Email CV and Cover Letter' %>
         <%= f.submit %>
       <% end %>
     </div>

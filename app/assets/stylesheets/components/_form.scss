@@ -1,9 +1,12 @@
 .main-section {
   display: flex;
   justify-content: center;
-  border: 2px solid grey
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  margin-bottom: 40px
 }
 
-.box-form {
-  width: 500px;
+.job-form {
+  width: 600px;
+  padding-top: 40px;
+  padding-bottom: 40px
 }

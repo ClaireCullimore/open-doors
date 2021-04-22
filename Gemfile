@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
+gem 'will_paginate', '~> 3.1.0'
+
 
 
 # Reduces boot times through caching; required in config/boot.rb

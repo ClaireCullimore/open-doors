@@ -1,4 +1,9 @@
-.main-section {
-  margin-left: 100px;
-  margin-right: 100px
+.middle-section {
+  display: flex;
+  justify-content: center;
+}
+
+.show-section {
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  margin-bottom: 40px
 }

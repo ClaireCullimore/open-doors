@@ -1,16 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar-light ">
-  <a class="navbar-brand" href="#">Open Doors</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-         <%= link_to "Jobs", jobs_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Post a Job", new_job_path, class: "nav-link" %>
-      </li>
-    </ul>
-  </div>
+<nav class="navbar navbar-expand-lg">
+      <img src="https://img.icons8.com/ios-filled/100/000000/door-opened.png"/>
+      <a class="navbar-brand" id="navbar-title">Open Doors</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                 <%= link_to "Jobs", jobs_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "Post a Job", new_job_path, class: "nav-link" %>
+              </li>
+            </ul>
+          </div>
+        </div>
 </nav>

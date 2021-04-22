@@ -1,8 +1,12 @@
 <%= render "shared/navbar" %>
 <div class="container">
-  <div style="text-align: center"><h1><%=@job.title%></h1>
-<p>Company: <%= @job.company %></p>
-<p>Terms: <%= @job.terms %></p>
-<p>Job Description: <%= @job.description %></p>
- </div>
+  <div class="show-section">
+    <h1><%=@job.title%></h1>
+      <p>Company: <%= @job.company %></p>
+      <p>Terms: <%= @job.terms %></p>
+      <p>Job Description: <%= @job.description %></p>
+      <p>Apply via the following link: <%= @job.link %></p>
+      <p>Email CV and Cover Letter: <%= @job.email %></p>
+    </div>
+  </div>
 </div>

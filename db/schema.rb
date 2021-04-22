@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_20_110652) do
+ActiveRecord::Schema.define(version: 2021_04_20_180202) do
 
   create_table "jobs", force: :cascade do |t|
     t.string "title"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2021_04_20_110652) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "link"
     t.date "date"
+    t.string "email"
   end
 
 end
