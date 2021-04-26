@@ -6,6 +6,7 @@ one:
   location: "London"
   terms: "Full time"
   description: "Great office and nice people"
+  email: c@gmail.com
 
 two:
   title: "Software Engineer"
@@ -13,3 +14,4 @@ two:
   location: "Manchester"
   terms: "Part Time"
   description: "Fun team"
+  email: a@hotmail.com
