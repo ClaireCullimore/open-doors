@@ -16,15 +16,18 @@ class JobsTest < ApplicationSystemTestCase
     visit "/jobs/new"
     # save_and_open_screenshot
 
-    fill_in "title", with: "Junior Developer"
+    fill_in "job_title", with: "Junior Developer"
+    fill_in "job_company", with: "Facebook"
+    select "Freelance", from: "job_terms"
+    fill_in "job_description", with: "Great Job. React skills"
+    fill_in "job_location", with: "London"
     # save_and_open_screenshot
 
-    click_on 'Submit'
+    click_on 'Create Job'
     # save_and_open_screenshot
 
     # Should be redirected to Home with new job
-    assert_equal root_path, page.current_path
-    assert_text "Junior Coding Jobs"
+    assert_equal root_path, jobs_path
+    assert_text "Job was successfully created"
   end
-
 end
